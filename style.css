@@ -63,7 +63,7 @@ a span {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(0deg, rgba(133, 133, 133, 0.2), rgba(133, 133, 133, 0.2)), url("bg.jpg") center no-repeat scroll;
+	background: linear-gradient(0deg, rgba(133, 133, 133, 0.2), rgba(133, 133, 133, 0.2)), url("bg.png") center no-repeat scroll;
 	background-size: cover;
 }
 
