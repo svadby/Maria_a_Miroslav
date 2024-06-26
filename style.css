@@ -1,0 +1,309 @@
+@import url("http://fonts.cdnfonts.com/css/daydream");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+body {
+	font-family: 'bellefair', sans-serif !important;
+	text-align: center;
+	background-color: #ffffff;
+	color: white;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.padding {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.top {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.small, .small2 {
+	padding-top: 60px;
+	color: black;
+	text-transform: uppercase;
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+.small2 {
+	padding-top: 50px;
+}
+
+button span {
+	font-style: italic;
+	font-size: 13px;
+}
+
+p span {
+	font-style: italic;
+	font-size: 17px;
+}
+
+a span {
+	font-style: italic;
+	font-size: 13px;
+}
+
+.small2 span {
+	font-style: italic;
+	font-size: 13px;
+}
+
+
+.top::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(0deg, rgba(133, 133, 133, 0.2), rgba(133, 133, 133, 0.2)), url("bg.jpg") center no-repeat scroll;
+	background-size: cover;
+}
+
+.top div {
+	position: relative;
+}
+
+#date {
+	margin: 0 auto;
+	width: 65vh;
+	height: auto;
+	margin-top: 35vh;
+}
+
+#name {
+	content:url("name.png");
+	margin: 0 auto;
+	max-width: 120vh;
+	height: auto;
+	margin-top: 15vh;
+}
+
+#date1 {
+	margin: 0 auto;
+	max-width: 120vh;
+	height: auto;
+	margin-top: 15vh;
+}
+
+.podpis {
+	font-size: 0.8rem;
+}
+
+#place {
+	color: black;
+	font-size: 20px;
+	margin-top: 50px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+#line {
+	width: 70%;
+	margin: 0 auto;
+	border-bottom: 1px solid #C9C9C9;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.more {
+	color: black;
+	font-size: 20px;
+	margin-top: 150px;
+	margin-bottom: 200px;
+}
+
+
+
+.footer {
+	padding-top: 100px;
+	color: #C9C9C9;
+	text-transform: uppercase;
+	line-height: 188.6%;
+	padding-bottom: 40px;
+}
+
+a {
+	text-transform: uppercase;
+	color: black;
+	transition: 0.3s;
+}
+
+.space {
+	padding-bottom: 20px;
+}
+
+a:hover {
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.662);
+	transition: 0.3s;
+}
+
+a button {
+	font-family: inherit;
+	background: rgba(255, 255, 255, 0.342);
+	border: none;
+	border-radius: 50px;
+	padding: 12px 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	text-transform: uppercase;
+	color: #ffffffc9;
+	margin-top: 20px;
+	font-size: 17px;
+}
+
+a button:hover {
+	background: #ffffff9c;
+	transition: 0.3s;
+}
+
+@media (max-width: 1450px){
+	#name {
+		max-width: 100vh;
+	}
+	#date1 {
+		max-width: 100vh;
+	}
+}
+
+@media (max-width: 1120px){
+	#name {
+		margin-top: 10vh;
+		content:url("name1.png");
+		max-width: 100%; 
+	}
+}
+
+@media (max-width: 1000px){
+	#date1 {
+		max-width: 100vh;
+	}
+}
+
+
+
+.gray {
+	font-size: 18px;
+	margin-top: 50px;
+	line-height: 40px;
+	text-transform: uppercase;
+	color: #A4A4A4;
+	padding-bottom: 50px;
+}
+
+.h2 {
+	font-family: inherit;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: left;
+}
+
+.text {
+	color: black;
+	font-family: inherit;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-align: left;
+	padding-left: 60px;
+	line-height: 30px
+}
+
+
+@media (max-width: 768px){
+	.gray {
+		font-size: 17px;
+		width: 80%;
+		margin: 50px auto;
+		line-height: 30px;
+	}
+	.h2 {
+		font-size: 17px;
+	}
+	.text {
+		font-size: 15px;
+		padding-left: 0px;
+		line-height: 25px;
+	}
+	.padding a {
+		padding: 0;
+		font-size: 15px;
+	}
+}
+
+.box{
+	position: absolute;
+	top: 100px;
+	padding-left: 50%;
+}
+
+.box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+@keyframes animate{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+
+
+
+@media (max-width: 768px){
+	.box{
+		top: 150px;
+	}
+	#date {
+		width: 40vh;
+		margin-top: 32vh;
+	}
+	#date1 {
+		margin-top: 10vh;
+		max-width: 100%; 
+		content:url("date2.png");
+	}
+	#place {
+		font-size: 17px;
+		width: 80%;
+		margin: 50px auto;
+		line-height: 30px;
+	}
+	.small, .small2, a, .footer {
+		font-size: 13px;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
